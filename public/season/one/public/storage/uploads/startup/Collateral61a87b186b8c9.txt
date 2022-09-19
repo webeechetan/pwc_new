@@ -1,0 +1,80 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 01, 2021 at 07:21 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `euler`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `carrer_page`
+--
+
+CREATE TABLE `carrer_page` (
+  `id` int(11) NOT NULL,
+  `section_name` varchar(255) DEFAULT NULL,
+  `main_title` varchar(255) DEFAULT NULL,
+  `main_description` longtext DEFAULT NULL,
+  `main_image` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `footer_title` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
+  `description` longtext DEFAULT NULL,
+  `btn_link` varchar(255) DEFAULT NULL,
+  `btn_text` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `carrer_page`
+--
+
+INSERT INTO `carrer_page` (`id`, `section_name`, `main_title`, `main_description`, `main_image`, `title`, `footer_title`, `logo`, `description`, `btn_link`, `btn_text`) VALUES
+(1, 'hero', 'Join the team!', NULL, 'careers-hero.jpg', 'Make your next transition worthy', NULL, NULL, NULL, NULL, NULL),
+(2, 'section_two', 'Why choose Euler?', 'We aim to press the hyper speed button on the world&#39;s transition to sustainable energy. Join us if you share our passion for innovation and can back it up with your talent and perseverance.', 'team_photo2.jpg', NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'section_three', 'We don’t let cubicles block our vision.', 'At Euler, we believe that great teams are built on a foundation of transparency. We encourage teams to spill over, merge and synergise, giving us a fresh perspective at all times. That means all it takes to share your new, revolutionary idea is a simple stroll to the other desk.', 'careers-bg1.jpg', NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'section_four', 'We believe that diversity fuels innovation.', 'You can’t build something new when everyone thinks the same. A diverse team helps us in coming up with new approaches and innovative solutions.&nbsp;', 'careers-bg2.jpg', NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'section_five', 'We unlearn to learn.', 'Building something from scratch involves a lot of breaking. Shattering conventions, smashing inhibitions and dismantling procedures to build it all from the ground up.', 'careers-bg3.jpg', NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 'section_six', 'Want to be a part of our team?', 'Send your CV to hr@eulermotors.com', 'careers-bg4.jpg', NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 'meta', 'Euler mototrs Carrers', 'meta descscription test', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `carrer_page`
+--
+ALTER TABLE `carrer_page`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `carrer_page`
+--
+ALTER TABLE `carrer_page`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
